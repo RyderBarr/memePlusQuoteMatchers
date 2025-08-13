@@ -1,0 +1,33 @@
+button{
+
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 220, 0.9);
+    margin: 7px;
+    padding: 3px;
+
+}
+button:hover{
+
+    margin: 3px;
+    padding: 7px;
+    background-color: rgba(255, 228, 196, 0.9);
+
+}
+input{
+
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(213, 76, 179, 0.5);
+    margin: 5px;
+    padding: 4px;
+    max-width: 40vw;
+
+}
+input:hover{
+
+    margin: 4px;
+    padding: 5px;
+    /* background-color: ; */
+
+}
