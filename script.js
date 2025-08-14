@@ -97,7 +97,9 @@ $(document).ready(function(){
     function populate()
     {
 
-        for (let i = 1;i < memes.length; i++)
+        $('#gallery').html('')
+
+        for (let i = 0;i < memes.length; i++)
         {
     
             $('#gallery').append(`
@@ -118,7 +120,24 @@ $(document).ready(function(){
     $('#add').on('click', function(event)
     {
 
-        $('#gallery').append(`
+        memes.unshift(document.getElementById('memeURL').value)
+        quotes.unshift(document.getElementById('quoteText').value)
+
+
+        populate()
+
+    })
+
+    $('#suffle').on('click', function(event)
+    {
+
+        randnum = Math.floor(Math.random() * 20 + 1)
+        $('#gallery').html('')
+
+        for(let i = randnum; i == randnum-1;i++)
+        {
+
+            $('#gallery').append(`
                 
                 <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300'>
                     <img src="${memes[i]}" alt="" class='w-[70vw] p-2'>
@@ -127,12 +146,14 @@ $(document).ready(function(){
 
                 `)
 
-    })
+            if(i == 20)
+            {
 
-    $('#suffle').on('click', function(event)
-    {
+                i = 0;
 
+            }
 
+        }
 
     })
 
@@ -146,7 +167,7 @@ $(document).ready(function(){
     $('#randomCombo').on('click', function(event)
     {
 
-
+        
 
     })
     
