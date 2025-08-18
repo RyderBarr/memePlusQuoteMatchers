@@ -1,4 +1,9 @@
 
+function onclickDelete(button){
+
+    button.parentNode.remove();
+
+}
 
 let memes = [
 
@@ -142,7 +147,7 @@ let memes = [
  
         alt:'bell curve',
         url:'https://i.imgflip.com/8tw3vb.png',
-        quote: 'whale are fish | whale are mammals | whale are fish',
+        quote: 'whale are fish ----------------------- whale are mammals ----------------------- whale are fish',
  
     },
     
@@ -212,9 +217,9 @@ let memes = [
     
     {
  
-        alt:'paul allen?',
-        url:'https://i.imgflip',
-        quote:'very good <br> let\'s see Paul Allen\'s PC set up',
+        alt:'american phycho',
+        url:'https://media.tenor.com/Q823-830Ri0AAAAM/christian-bale-american-psycho.gif',
+        quote:'Me walking through any social gathering',
  
     },
 
@@ -304,6 +309,7 @@ $(document).ready(function(){
                 <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300'>
                     <img src="${memes[i].url}" alt="${memes[i].alt}" class='w-[70vw] p-2'>
                     <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl'>${memes[i].quote}</h2>
+                    <button onclick="onclickDelete(this)" class='w-[70vw] h-[10vh] delete rounded-4xl'>delete</button>   
                 </div>
 
                 `)
@@ -317,15 +323,42 @@ $(document).ready(function(){
     $('#add').on('click', function(event)
     {
 
-        memes.unshift(
+        let quote = document.getElementById('quoteText').value;
+        let quotePattern = /\s.*\s.*\s/;
+        
+
+        let meme = document.getElementById('memeURL').value;
+        let memePattern = /(.jpg|.png|.gif)$/i;
+        
+
+        if(
+            !(quote.match(quotePattern)==null)
+            &&
+            !(meme.match(memePattern)==null)
+        ) 
+        {
+
+            memes.unshift(
+                {
+
+                    quote:quote,
+                    url:meme,
+                    alt:'custom made image',
+
+                }
+            )
+
+        }
+        else{
+            if(quote.match(quotePattern)==null)
             {
-
-                quote:document.getElementById('memeURL').value,
-                url:document.getElementById('quoteText').value,
-                alt:null,
-
+                alert('quote must be more then 3 words')
             }
-        )
+            if(meme.match(memePattern)==null)
+            {
+                alert('url must end with .jpg, .png, and .gif ')
+            }
+        }
 
         populate()
 
@@ -346,6 +379,7 @@ $(document).ready(function(){
                 <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300'>
                     <img src="${memes[i].url}" alt="${memes[i].alt}" class='w-[70vw] p-2'>
                     <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl'>${memes[i].quote}</h2>
+                    <button onclick="onclickDelete(this)"class='w-[70vw] h-[10vh] delete rounded-4xl'>delete</button>
                 </div>
 
                 `)
@@ -391,6 +425,7 @@ $(document).ready(function(){
                 <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300 opacity-85'>
                     <img src="${tempArray[i].url}" alt="${tempArray[i].alt}" class='w-[70vw] p-2' opacity-75>
                     <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl opacity-85'>${tempArray[i].quote}</h2>
+                    <button onclick="onclickDelete(this)"class='w-[70vw] h-[10vh] delete rounded-4xl'>delete</button>
                 </div>
 
                 `)
@@ -431,6 +466,7 @@ $(document).ready(function(){
                 <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300 opacity-85'>
                     <img src="${memes[meme].url}" alt="${memes[meme].alt}" class='w-[70vw] p-2' opacity-75>
                     <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl opacity-85'>${memes[quote].quote}</h2>
+                    <button onclick="onclickDelete(this)"class='w-[70vw] h-[10vh] delete rounded-4xl'>delete</button>    
                 </div>
 
                 `)
