@@ -1,46 +1,235 @@
+
+
 let memes = [
-    ['https://i.pinimg.com/236x/23/41/7c/23417c1ee1e24c31446b5666d5017595.jpg','sonic the glizzy goblin'],
-    ['https://images.cdn-files-a.com/uploads/1918596/2000_5c676ebc029b5.jpg','old stock photo guy'],
-    ['https://www.meme-arsenal.com/memes/d29321fec73e3036daa58d08482527d8.jpg','sad cat'],
-    ['https://ih1.redbubble.net/image.4725745836.5629/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg','loss.png'],
-    ['https://content.imageresizer.com/images/memes/Screaming-meme-6.jpg','filthy franke screaming'],
-    ['https://www.meme-arsenal.com/memes/70fc4ad29ec9e77759738a4526d31952.jpg','side eye'],
-    ['https://static.pbslearningmedia.org/media/collections/1aguu4.jpg', 'sloth with bad hair line'],
-    ['https://pm1.aminoapps.com/7571/98cdfbd20c23039902e3a46025498e77d518e094r1-749-442v2_hq.jpg', 'suprized pickachu'],
-    ['https://i.pinimg.com/200x150/1d/d9/10/1dd9102e9e36e28f26adddfca9fddb21.jpg', 'is this a bird?'],
-    ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu7QYxOTZ6LHEc8Dep6irpbDuy35_QTVGQTA&s', 'the wall Pink Floyd'],
-    ['https://i.pinimg.com/236x/50/fe/2b/50fe2b0cd9274aca7575556e1b6644d9.jpg','it'],
-    ['https://i.redd.it/z10g17uoptx91.jpg','cat in the hat'],
-    ['https://www.treehugger.com/thmb/_Laad-vOB6g7JbXo15sSfZY9B8I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2017__04__Platypus-Swimming-Water-61eea67f3ffa47d18bf47e79d73f2c6e.jpg','platypus swimming in water'],
-    ['https://i.ytimg.com/vi/yV_wA62bbtk/maxresdefault.jpg', 'I don\' remember this guy\'s name'],
-    ['https://www.vexforum.com/uploads/default/original/3X/6/4/64a5140c67b1b3552ab6e890e535c2fb0c3ee8e9.jpeg', 'gru'],
-    ['https://i1.sndcdn.com/avatars-0Zvzb8BbIDCteRnH-X0P3Ng-t1080x1080.jpg', 'the bee movie'],
-    ['https://ih1.redbubble.net/image.2527780669.6340/raf,360x360,075,t,fafafa:ca443f4786.jpg','four wierd cats'],
-    ['https://i.imgflip.com/8tw3vb.png','bell curve'],
-    ['https://i.imgflip.com/27qxmb.jpg', 'im something of a '],
-    ['https://i1.sndcdn.com/artworks-s5htOUZ86I68UneP-gss7pQ-t500x500.jpg', 'time to stop'],
-    ['https://imgflip.com/s/meme/Laughing-Leo.png','leo '],
-    ['https://i.ytimg.com/vi/XR9uwISDnRk/maxresdefault.jpg','obama'],
-    ['https://i.imgflip.com/29s5ao.jpg','elmo'],
-    ['https://i.imgflip.com/2tdam9.png','let me in'],
-    ['https://i.imgflip.com/1i40lv.jpg','sisysphusis'],
-    ['https://i.imgflip.com/8gmiw7.jpg','sad hampster'],
-    ['https://i.imgflip.com/52m3ru.png','paul allen?'],
-    ['https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif', 'go go godzilla slide kick'],
-    ['https://pbs.twimg.com/profile_images/1467777507675951115/Nl3EgI_y_400x400.jpg',' you know the rules and so do i']
+
+    {
+        
+        name:'sonic the glizzy goblin',
+        url:'https://i.pinimg.com/236x/23/41/7c/23417c1ee1e24c31446b5666d5017595.jpg',
+        quote:'when there is only 5min left of lunch',
+
+    },
+
+    {
+
+        name:'side eye',
+        url:'https://www.meme-arsenal.com/memes/70fc4ad29ec9e77759738a4526d31952.jpg',
+        quote:'me: tomorrow is my friend\'s birthday <br> also me, the day after:',
+
+
+    },
+
+    {
+
+        name:'is this a bird?',
+        url:'https://i.pinimg.com/200x150/1d/d9/10/1dd9102e9e36e28f26adddfca9fddb21.jpg',
+        quote:'Is this a pigeon',
+
+    },
+
+    {
+
+        name:'the wall Pink Floyd',
+        url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu7QYxOTZ6LHEc8Dep6irpbDuy35_QTVGQTA&s',
+        quote:'POV: kanye',
+
+    },
+    
+    {
+
+        name:'old stock photo guy',
+        url:'https://images.cdn-files-a.com/uploads/1918596/2000_5c676ebc029b5.jpg',
+        quote: 'when you want to hang up but can\'t because your freind is yapping',
+
+    },
+
+    {
+
+        name:'sad cat',
+        url:'https://www.meme-arsenal.com/memes/d29321fec73e3036daa58d08482527d8.jpg',
+        quote: 'when your parents won\'t get the skylander that cost $10 dollars',
+
+    },
+    
+    {
+
+        name:'loss.png',
+        url:'https://ih1.redbubble.net/image.4725745836.5629/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
+        quote: 'loss.png',
+    },
+
+    {
+
+        name:'filthy franke screaming',
+        url:'https://content.imageresizer.com/images/memes/Screaming-meme-6.jpg',
+        quote: '*confused screaming*',
+
+    },
+   
+    {
+
+        name:'sloth with bad hair line',
+        url:'https://static.pbslearningmedia.org/media/collections/1aguu4.jpg', 
+        quote: 'POV: <br> \" do you like my new hair cut\"',
+
+    },
+   
+    {
+
+        name:'suprized pickachu',
+        url:'https://pm1.aminoapps.com/7571/98cdfbd20c23039902e3a46025498e77d518e094r1-749-442v2_hq.jpg',
+        quote: 
+
+    },
+   
+    {
+
+        name:'it',
+        url:'https://i.pinimg.com/236x/50/fe/2b/50fe2b0cd9274aca7575556e1b6644d9.jpg',
+        quote: 
+
+    },
+   
+    {
+
+        name:'cat in the hat',
+        url:'https://i.redd.it/z10g17uoptx91.jpg',
+        quote: 
+
+    },
+   
+    {
+
+        name:'platypus swimming in water',
+        url:'https://www.treehugger.com/thmb/_Laad-vOB6g7JbXo15sSfZY9B8I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2017__04__Platypus-Swimming-Water-61eea67f3ffa47d18bf47e79d73f2c6e.jpg',
+        quote: 
+
+    },
+   
+    {
+
+        name:'I don\'t remember this guy\'s name',
+        url:'https://i.ytimg.com/vi/yV_wA62bbtk/maxresdefault.jpg',
+        quote: 
+
+    },
+   
+    {
+
+        name:'gru',
+        url:'https://www.vexforum.com/uploads/default/original/3X/6/4/64a5140c67b1b3552ab6e890e535c2fb0c3ee8e9.jpeg',
+        quote: 
+
+    },
+   
+    {
+
+        name:'the bee movie',
+        url:'https://i1.sndcdn.com/avatars-0Zvzb8BbIDCteRnH-X0P3Ng-t1080x1080.jpg',
+        quote: 
+
+    }, 
+    
+    {
+ 
+        name:'four wierd cats',
+        url:'https://ih1.redbubble.net/image.2527780669.6340/raf,360x360,075,t,fafafa:ca443f4786.jpg',
+        quote: 
+ 
+    },
+    
+    {
+ 
+        name:'bell curve',
+        url:'https://i.imgflip.com/8tw3vb.png',
+        quote: 
+ 
+    },
+    
+    {
+ 
+        name:'im something of a ',
+        url:'https://i.imgflip.com/27qxmb.jpg',
+        quote: 
+ 
+    },
+    
+    {
+ 
+        name:'time to stop',
+        url:'https://i1.sndcdn.com/artworks-s5htOUZ86I68UneP-gss7pQ-t500x500.jpg',
+        quote: 
+ 
+    },
+    
+    {
+ 
+        name:'obama',
+        url:'https://i.ytimg.com/vi/XR9uwISDnRk/maxresdefault.jpg',
+        quote: 
+ 
+    },
+    
+    {
+ 
+        name:'elmo',
+        url:'https://i.imgflip.com/29s5ao.jpg',
+        quote: 
+ 
+    },
+    
+    {
+ 
+        name:'let me in',
+        url:'https://i.imgflip.com/2tdam9.png',
+        quote: 
+ 
+    },
+    
+    {
+ 
+        name:'sisysphusis',
+        url:'https://i.imgflip.com/1i40lv.jpg',
+        quote: 
+ 
+    },
+    
+    {
+ 
+        name:'sad hampster',
+        url:'https://i.imgflip.com/8gmiw7.jpg',
+        quote: 
+ 
+    },
+    
+    {
+ 
+        name:'paul allen?',
+        url:'https://i.imgflip',
+        quote:'',
+ 
+    },
+
+    {
+ 
+        name:'go go godzilla slide kick',
+        url:'https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif',
+        quote:'',
+ 
+    },
+
+    {
+ 
+        name:' you know the rules and so do i',
+        url:'https://pbs.twimg.com/profile_images/1467777507675951115/Nl3EgI_y_400x400.jpg',
+        quote:'',
+ 
+    },
+
 ]
 
 quotes = [
-    'when there is only 5min left of lunch',//1
-    'when you want to hang up but can\'t because your freind is yapping',//2
-    'when your parents won\'t get the skylander that cost $10 dollars',//3
-    'loss.png',//4
-    '*confused screaming*',//5
-    'me: tomorrow is my friend\'s birthday <br> also me, the day after:',//6
-    'POV: <br> \" do you like my new hair cut\"',//7
     'when someone doesn\'t just use an attacking move',//8
-    'Is this a pigeon',//9
-    'POV: kanye',//10
     'Hey kid I have a PS4 down here',//11
     'when you see a website without css',//12
     'pov: you incounter the most venomous mammal in the world',//13
@@ -113,13 +302,6 @@ quotes = [
     Never gonna run around and desert you <br>
     Never gonna make you cry, never gonna say goodbye <br>
     Never gonna tell a lie and hurt you </span>`,//24
-]
-
-let index = [
-
-    1,2,3,4,5,6,7,8,9,10,
-    11,12,13,14,15,16,17,18,19,20
-
 ]
 
 $(document).ready(function(){
