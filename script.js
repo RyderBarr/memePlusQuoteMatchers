@@ -4,7 +4,7 @@ let memes = [
 
     {
         
-        name:'sonic the glizzy goblin',
+        alt:'sonic the glizzy goblin',
         url:'https://i.pinimg.com/236x/23/41/7c/23417c1ee1e24c31446b5666d5017595.jpg',
         quote:'when there is only 5min left of lunch',
 
@@ -12,7 +12,7 @@ let memes = [
 
     {
 
-        name:'side eye',
+        alt:'side eye',
         url:'https://www.meme-arsenal.com/memes/70fc4ad29ec9e77759738a4526d31952.jpg',
         quote:'me: tomorrow is my friend\'s birthday <br> also me, the day after:',
 
@@ -21,7 +21,7 @@ let memes = [
 
     {
 
-        name:'is this a bird?',
+        alt:'is this a bird?',
         url:'https://i.pinimg.com/200x150/1d/d9/10/1dd9102e9e36e28f26adddfca9fddb21.jpg',
         quote:'Is this a pigeon',
 
@@ -29,7 +29,7 @@ let memes = [
 
     {
 
-        name:'the wall Pink Floyd',
+        alt:'the wall Pink Floyd',
         url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu7QYxOTZ6LHEc8Dep6irpbDuy35_QTVGQTA&s',
         quote:'POV: kanye',
 
@@ -37,7 +37,7 @@ let memes = [
     
     {
 
-        name:'old stock photo guy',
+        alt:'old stock photo guy',
         url:'https://images.cdn-files-a.com/uploads/1918596/2000_5c676ebc029b5.jpg',
         quote: 'when you want to hang up but can\'t because your freind is yapping',
 
@@ -45,7 +45,7 @@ let memes = [
 
     {
 
-        name:'sad cat',
+        alt:'sad cat',
         url:'https://www.meme-arsenal.com/memes/d29321fec73e3036daa58d08482527d8.jpg',
         quote: 'when your parents won\'t get the skylander that cost $10 dollars',
 
@@ -53,14 +53,14 @@ let memes = [
     
     {
 
-        name:'loss.png',
+        alt:'loss.png',
         url:'https://ih1.redbubble.net/image.4725745836.5629/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg',
         quote: 'loss.png',
     },
 
     {
 
-        name:'filthy franke screaming',
+        alt:'filthy franke screaming',
         url:'https://content.imageresizer.com/images/memes/Screaming-meme-6.jpg',
         quote: '*confused screaming*',
 
@@ -68,7 +68,7 @@ let memes = [
    
     {
 
-        name:'sloth with bad hair line',
+        alt:'sloth with bad hair line',
         url:'https://static.pbslearningmedia.org/media/collections/1aguu4.jpg', 
         quote: 'POV: <br> \" do you like my new hair cut\"',
 
@@ -76,232 +76,217 @@ let memes = [
    
     {
 
-        name:'suprized pickachu',
+        alt:'suprized pickachu',
         url:'https://pm1.aminoapps.com/7571/98cdfbd20c23039902e3a46025498e77d518e094r1-749-442v2_hq.jpg',
-        quote: 
+        quote: 'when someone doesn\'t just use an attacking move',
 
     },
    
     {
 
-        name:'it',
+        alt:'it',
         url:'https://i.pinimg.com/236x/50/fe/2b/50fe2b0cd9274aca7575556e1b6644d9.jpg',
-        quote: 
+        quote:'Hey kid I have a PS4 down here',
 
     },
    
     {
 
-        name:'cat in the hat',
+        alt:'cat in the hat',
         url:'https://i.redd.it/z10g17uoptx91.jpg',
-        quote: 
+        quote:'when you see a website without css',
 
     },
    
     {
 
-        name:'platypus swimming in water',
+        alt:'platypus swimming in water',
         url:'https://www.treehugger.com/thmb/_Laad-vOB6g7JbXo15sSfZY9B8I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2017__04__Platypus-Swimming-Water-61eea67f3ffa47d18bf47e79d73f2c6e.jpg',
-        quote: 
+        quote:'pov: you incounter the most venomous mammal in the world',
 
     },
    
     {
 
-        name:'I don\'t remember this guy\'s name',
+        alt:'I don\'t remember this guy\'s alt',
         url:'https://i.ytimg.com/vi/yV_wA62bbtk/maxresdefault.jpg',
-        quote: 
+        quote: 'me running to the Nigerian Prince that needs a loan to dig gold',
 
     },
    
     {
 
-        name:'gru',
+        alt:'gru',
         url:'https://www.vexforum.com/uploads/default/original/3X/6/4/64a5140c67b1b3552ab6e890e535c2fb0c3ee8e9.jpeg',
-        quote: 
+        quote: 'the moon in zelda for no reason',
 
     },
    
     {
 
-        name:'the bee movie',
+        alt:'the bee movie',
         url:'https://i1.sndcdn.com/avatars-0Zvzb8BbIDCteRnH-X0P3Ng-t1080x1080.jpg',
-        quote: 
+        quote: '<span class="text-orange-900 font-mono font-light ">jazz</span>',
 
     }, 
     
     {
  
-        name:'four wierd cats',
+        alt:'four wierd cats',
         url:'https://ih1.redbubble.net/image.2527780669.6340/raf,360x360,075,t,fafafa:ca443f4786.jpg',
-        quote: 
+        quote: 'the zoom meeting just started',
  
     },
     
     {
  
-        name:'bell curve',
+        alt:'bell curve',
         url:'https://i.imgflip.com/8tw3vb.png',
-        quote: 
+        quote: 'whale are fish | whale are mammals | whale are fish',
  
     },
     
     {
  
-        name:'im something of a ',
+        alt:'im something of a ',
         url:'https://i.imgflip.com/27qxmb.jpg',
-        quote: 
+        quote: 'you know im something of a spider-man my self',
  
     },
     
     {
  
-        name:'time to stop',
+        alt:'time to stop',
         url:'https://i1.sndcdn.com/artworks-s5htOUZ86I68UneP-gss7pQ-t500x500.jpg',
-        quote: 
+        quote: 'it\'s time to stop',
  
     },
     
     {
  
-        name:'obama',
+        alt:'leo',
+        url:'https://imgflip.com/s/meme/Laughing-Leo.png',
+        quote: 'when a 20 minute Pink Floyd song starts playing',
+ 
+    },
+    
+    {
+ 
+        alt:'obama',
         url:'https://i.ytimg.com/vi/XR9uwISDnRk/maxresdefault.jpg',
-        quote: 
+        quote: 'obama pyramid',
  
     },
     
     {
  
-        name:'elmo',
+        alt:'elmo',
         url:'https://i.imgflip.com/29s5ao.jpg',
-        quote: 
+        quote: 'me in the repo that doesn\'t make any sense to any one but me',
  
     },
     
     {
  
-        name:'let me in',
+        alt:'let me in',
         url:'https://i.imgflip.com/2tdam9.png',
-        quote: 
+        quote:'When I get to class 40 minutes early', 
  
     },
     
     {
  
-        name:'sisysphusis',
+        alt:'sisysphusis',
         url:'https://i.imgflip.com/1i40lv.jpg',
-        quote: 
+        quote: 'hard coding',
  
     },
     
     {
  
-        name:'sad hampster',
+        alt:'sad hampster',
         url:'https://i.imgflip.com/8gmiw7.jpg',
-        quote: 
+        quote:'the way im looking at the officer when \'I didn\'t mean to hit the family of four\'', 
  
     },
     
     {
  
-        name:'paul allen?',
+        alt:'paul allen?',
         url:'https://i.imgflip',
-        quote:'',
+        quote:'very good <br> let\'s see Paul Allen\'s PC set up',
  
     },
 
     {
  
-        name:'go go godzilla slide kick',
+        alt:'go go godzilla slide kick',
         url:'https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif',
-        quote:'',
- 
+        quote:`when i go go godzilla slide kick
+                <div class="flex flex-row justify-center items-between"> 
+                <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[2vw] p-2'>
+                <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[4vw] p-2'>
+                <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[6vw] p-2'>
+                <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[8vw] p-2'>
+                <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[10vw] p-2'>
+                <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[10vw] p-2'>
+                <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[8vw] p-2'>
+                <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[6vw] p-2'>
+                <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[4vw] p-2'>
+                <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[2vw] p-2'>
+                </div>
+            `,
+        
     },
 
     {
  
-        name:' you know the rules and so do i',
+        alt:' you know the rules and so do i',
         url:'https://pbs.twimg.com/profile_images/1467777507675951115/Nl3EgI_y_400x400.jpg',
-        quote:'',
- 
+        quote:`I mean you know <br> the rules <br> <span class=" text-xs ">
+            A full commitment's what I'm thinkin' of <br>
+            You wouldn't get this from any other guy <br>
+            I just wanna tell you how I'm feeling <br>
+            Gotta make you understand <br>
+            Never gonna give you up, never gonna let you down <br>
+            Never gonna run around and desert you <br>
+            Never gonna make you cry, never gonna say goodbye <br>
+            Never gonna tell a lie and hurt you <br>
+            We've known each other for so long <br>
+            Your heart's been aching, but you're too shy to say it <br>
+            Inside, we both know what's been going on <br>
+            We know the game and we're gonna play it <br>
+            And if you ask me how I'm feeling <br>
+            Don't tell me you're too blind to see <br>
+            Never gonna give you up, never gonna let you down <br>
+            Never gonna run around and desert you <br>
+            Never gonna make you cry, never gonna say goodbye <br>
+            Never gonna tell a lie and hurt you <br>
+            Never gonna give you up, never gonna let you down <br>
+            Never gonna run around and desert you <br>
+            Never gonna make you cry, never gonna say goodbye <br>
+            Never gonna tell a lie and hurt you <br>
+            We've known each other for so long <br>
+            Your heart's been aching, but you're too shy to say it <br>
+            Inside, we both know what's been going on <br>
+            We know the game and we're gonna play it <br>
+            I just wanna tell you how I'm feeling <br>
+            Gotta make you understand <br>
+            Never gonna give you up, never gonna let you down <br>
+            Never gonna run around and desert you <br>
+            Never gonna make you cry, never gonna say goodbye <br>
+            Never gonna tell a lie and hurt you <br>
+            Never gonna give you up, never gonna let you down <br>
+            Never gonna run around and desert you <br>
+            Never gonna make you cry, never gonna say goodbye <br>
+            Never gonna tell a lie and hurt you <br>
+            Never gonna give you up, never gonna let you down <br>
+            Never gonna run around and desert you <br>
+            Never gonna make you cry, never gonna say goodbye <br>
+            Never gonna tell a lie and hurt you </span>`,
+        
     },
 
-]
-
-quotes = [
-    'when someone doesn\'t just use an attacking move',//8
-    'Hey kid I have a PS4 down here',//11
-    'when you see a website without css',//12
-    'pov: you incounter the most venomous mammal in the world',//13
-    'me running to the Nigerian Prince that needs a loan to dig gold',//14
-    'the moon in zelda for no reason',//15
-    '<span class="text-orange-900 font-mono font-light ">jazz</span>',//16
-    'the zoom meeting just started',//17
-    'whale are fish | whale are mammals | whale are fish',//18
-    'you know im something of a spider-man my self',//19
-    'it\'s time to stop',//20
-    'when a 20 minute Pink Floyd song starts playing',//21
-    'obama pyramid',//22
-    'me in the repo that doesn\'t make any sense to any one but me',//23
-    'When I get to class 40 minutes early',//
-    'hard coding',
-    'the way im looking at the officer when \'I didn\'t mean to hit the family of four\'',
-    'very good <br> let\'s see Paul Allen\'s PC set up',
-    `when i go go godzilla slide kick
-    <div class="flex flex-row justify-center items-between"> 
-    <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[2vw] p-2'>
-    <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[4vw] p-2'>
-    <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[6vw] p-2'>
-    <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[8vw] p-2'>
-    <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[10vw] p-2'>
-    <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[10vw] p-2'>
-    <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[8vw] p-2'>
-    <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[6vw] p-2'>
-    <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[4vw] p-2'>
-    <img src="https://media.tenor.com/GYN8AgO9O2cAAAAM/godzilla-slide.gif" alt="" class='w-[2vw] p-2'>
-    </div>
-    `,
-    `I mean you know <br> the rules <br> <span class=" text-xs ">
-    A full commitment's what I'm thinkin' of <br>
-    You wouldn't get this from any other guy <br>
-    I just wanna tell you how I'm feeling <br>
-    Gotta make you understand <br>
-    Never gonna give you up, never gonna let you down <br>
-    Never gonna run around and desert you <br>
-    Never gonna make you cry, never gonna say goodbye <br>
-    Never gonna tell a lie and hurt you <br>
-    We've known each other for so long <br>
-    Your heart's been aching, but you're too shy to say it <br>
-    Inside, we both know what's been going on <br>
-    We know the game and we're gonna play it <br>
-    And if you ask me how I'm feeling <br>
-    Don't tell me you're too blind to see <br>
-    Never gonna give you up, never gonna let you down <br>
-    Never gonna run around and desert you <br>
-    Never gonna make you cry, never gonna say goodbye <br>
-    Never gonna tell a lie and hurt you <br>
-    Never gonna give you up, never gonna let you down <br>
-    Never gonna run around and desert you <br>
-    Never gonna make you cry, never gonna say goodbye <br>
-    Never gonna tell a lie and hurt you <br>
-    We've known each other for so long <br>
-    Your heart's been aching, but you're too shy to say it <br>
-    Inside, we both know what's been going on <br>
-    We know the game and we're gonna play it <br>
-    I just wanna tell you how I'm feeling <br>
-    Gotta make you understand <br>
-    Never gonna give you up, never gonna let you down <br>
-    Never gonna run around and desert you <br>
-    Never gonna make you cry, never gonna say goodbye <br>
-    Never gonna tell a lie and hurt you <br>
-    Never gonna give you up, never gonna let you down <br>
-    Never gonna run around and desert you <br>
-    Never gonna make you cry, never gonna say goodbye <br>
-    Never gonna tell a lie and hurt you <br>
-    Never gonna give you up, never gonna let you down <br>
-    Never gonna run around and desert you <br>
-    Never gonna make you cry, never gonna say goodbye <br>
-    Never gonna tell a lie and hurt you </span>`,//24
 ]
 
 $(document).ready(function(){
@@ -317,8 +302,8 @@ $(document).ready(function(){
             $('#gallery').append(`
                 
                 <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300'>
-                    <img src="${memes[i][0]}" alt="${memes[i][1]}" class='w-[70vw] p-2'>
-                    <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl'>${quotes[i]}</h2>
+                    <img src="${memes[i].url}" alt="${memes[i].alt}" class='w-[70vw] p-2'>
+                    <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl'>${memes[i].quote}</h2>
                 </div>
 
                 `)
@@ -332,9 +317,15 @@ $(document).ready(function(){
     $('#add').on('click', function(event)
     {
 
-        memes.unshift(document.getElementById('memeURL').value)
-        quotes.unshift(document.getElementById('quoteText').value)
+        memes.unshift(
+            {
 
+                quote:document.getElementById('memeURL').value,
+                url:document.getElementById('quoteText').value,
+                alt:null,
+
+            }
+        )
 
         populate()
 
@@ -353,8 +344,8 @@ $(document).ready(function(){
             $('#gallery').append(`
                 
                 <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300'>
-                    <img src="${memes[i][0]}" alt="${memes[i][1]}" class='w-[70vw] p-2'>
-                    <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl'>${quotes[i]}</h2>
+                    <img src="${memes[i].url}" alt="${memes[i].alt}" class='w-[70vw] p-2'>
+                    <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl'>${memes[i].quote}</h2>
                 </div>
 
                 `)
@@ -368,12 +359,14 @@ $(document).ready(function(){
 
         }
 
+        // make useing sort
+
     })
 
     $('#search').on('click', function(event)
     {
 
-
+        // use regex
 
     })
 
@@ -385,18 +378,18 @@ $(document).ready(function(){
         for (let i = 0;i < memes.length; i++)
         {
 
-            let meme = i + Math.floor(Math.random() * 100);
+            let meme = Math.floor(Math.random() * 100);
 
-            while(meme > memes.length)
+            while(meme > memes.length -1)
             {
 
                 meme=meme-memes.length
 
             }
 
-            let quote = i + Math.floor(Math.random() * 100);
+            let quote = Math.floor(Math.random() * 100);
 
-            while(quote > memes.length)
+            while(quote > memes.length -1)
             {
 
             
@@ -407,11 +400,12 @@ $(document).ready(function(){
             $('#gallery').append(`
                 
                 <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300 opacity-85'>
-                    <img src="${memes[meme][0]}" alt="${memes[meme][1]}" class='w-[70vw] p-2' opacity-75>
-                    <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl opacity-85'>${quotes[quote]}</h2>
+                    <img src="${memes[meme].url}" alt="${memes[meme].alt}" class='w-[70vw] p-2' opacity-75>
+                    <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl opacity-85'>${memes[quote].quote}</h2>
                 </div>
 
                 `)
+            console.log(i)
 
         }
 
