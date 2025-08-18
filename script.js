@@ -363,10 +363,39 @@ $(document).ready(function(){
 
     })
 
-    $('#search').on('click', function(event)
+    $('#searchButton').on('click', function(event)
     {
 
-        // use regex
+        tempArray = []
+        
+        pattern = new RegExp(document.getElementById('search').value, 'i')
+
+        memes.forEach(meme => {
+
+            if(!(meme.alt.match(pattern) == null)||!(meme.quote.match(pattern) == null))
+            {
+
+                tempArray.push(meme)
+
+            }
+
+        });
+
+        $('#gallery').html('')
+
+        for (let i = 0;i < tempArray.length; i++)
+        {
+    
+            $('#gallery').append(`
+                
+                <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300 opacity-85'>
+                    <img src="${tempArray[i].url}" alt="${tempArray[i].alt}" class='w-[70vw] p-2' opacity-75>
+                    <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl opacity-85'>${tempArray[i].quote}</h2>
+                </div>
+
+                `)
+
+        }
 
     })
 
@@ -405,7 +434,6 @@ $(document).ready(function(){
                 </div>
 
                 `)
-            console.log(i)
 
         }
 
