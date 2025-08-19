@@ -1,5 +1,4 @@
-
-
+// the array of objects with all the memes in it
 let memes = [
 
     {
@@ -291,11 +290,15 @@ let memes = [
 
 $(document).ready(function(){
 
+    // function that fills the gallery with the contents of the array
     function populate()
     {
 
+        // clear the gallery
         $('#gallery').html('')
 
+        // creates a div for each of the memes 
+        // in the div there is a img, h2, and button
         for (let i = 0;i < memes.length; i++)
         {
     
