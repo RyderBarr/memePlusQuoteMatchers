@@ -1,4 +1,13 @@
-// the array of objects with all the memes in it
+
+// onclick function that deletes the meme
+function onclickDelete(button){
+
+    // deletes the meme
+    button.parentNode.remove();
+
+}
+
+// array of objects
 let memes = [
 
     {
@@ -141,7 +150,7 @@ let memes = [
  
         alt:'bell curve',
         url:'https://i.imgflip.com/8tw3vb.png',
-        quote: 'whale are fish | whale are mammals | whale are fish',
+        quote: 'whale are fish ----------------------- whale are mammals ----------------------- whale are fish',
  
     },
     
@@ -211,9 +220,9 @@ let memes = [
     
     {
  
-        alt:'paul allen?',
-        url:'https://i.imgflip',
-        quote:'very good <br> let\'s see Paul Allen\'s PC set up',
+        alt:'american phycho',
+        url:'https://media.tenor.com/Q823-830Ri0AAAAM/christian-bale-american-psycho.gif',
+        quote:'Me walking through any social gathering',
  
     },
 
@@ -288,6 +297,7 @@ let memes = [
 
 ]
 
+// jQuery
 $(document).ready(function(){
 
     // function that fills the gallery with the contents of the array
@@ -304,10 +314,11 @@ $(document).ready(function(){
     
             $('#gallery').append(`
                 
-                <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300'>
-                    <img src="${memes[i].url}" alt="${memes[i].alt}" class='w-[70vw] p-2'>
-                    <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl'>${memes[i].quote}</h2>
-                </div>
+                    <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300'>
+                        <img src="${memes[i].url}" alt="${memes[i].alt}" class='w-[70vw] p-2'>
+                        <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl'>${memes[i].quote}</h2>
+                        <button onclick="onclickDelete(this)" class='w-[70vw] h-[10vh] delete rounded-4xl'>delete</button>   
+                    </div>
 
                 `)
 
@@ -315,32 +326,80 @@ $(document).ready(function(){
 
     }
 
+    // adds all memes
     populate()
 
+    // when the add button gets clicked
     $('#add').on('click', function(event)
     {
 
-        memes.unshift(
+        // define user input
+        let quote = document.getElementById('quoteText').value;
+        // regex to conferm the input
+        let quotePattern = /\s.*\s.*\s/;
+        
+        // define user input
+        let meme = document.getElementById('memeURL').value;
+        // regex to conferm the input
+        let memePattern = /(.jpg|.png|.gif)$/i;
+        
+
+        if(
+            // check user inputs
+            !(quote.match(quotePattern)==null)
+            &&
+            !(meme.match(memePattern)==null)
+        ) 
+        {
+
+            // adds the user inputed meme to the start of the array 
+            memes.unshift(
+                {
+
+                    quote:quote,
+                    url:meme,
+                    // adds a way to easily find user made memes
+                    alt:'custom made image',
+
+                }
+            )
+
+        }
+        else
+        {
+
+            // tell the user why there input is invalid
+            if(quote.match(quotePattern)==null)
             {
 
-                quote:document.getElementById('memeURL').value,
-                url:document.getElementById('quoteText').value,
-                alt:null,
+                alert('quote must be more then 3 words')
 
             }
-        )
+            if(meme.match(memePattern)==null)
+            {
 
+                alert('url must end with .jpg, .png, and .gif ')
+
+            }
+
+        }
+
+        // populate with the new meme
         populate()
 
     })
 
+    // shuffle doesn't use .sort because I couldn't figure it out.(but it does work)
     $('#shuffle').on('click', function(event)
     {
 
+        // create a random number
         randnum = Math.floor(Math.random() * (memes.length-2) + 2)
         
+        // clear the gallery
         $('#gallery').html('')
 
+        // it starts at the random number and goes while i is not = to the random number +1
         for(let i = randnum; i != randnum+1;i--)
         {
 
@@ -349,10 +408,12 @@ $(document).ready(function(){
                 <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300'>
                     <img src="${memes[i].url}" alt="${memes[i].alt}" class='w-[70vw] p-2'>
                     <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl'>${memes[i].quote}</h2>
+                    <button onclick="onclickDelete(this)"class='w-[70vw] h-[10vh] delete rounded-4xl'>delete</button>
                 </div>
 
                 `)
 
+            // when i = 0 start at the top of the array 
             if(i == 0)
             {
 
@@ -362,30 +423,36 @@ $(document).ready(function(){
 
         }
 
-        // make useing sort
-
     })
 
+    // search when the button is clicked
     $('#searchButton').on('click', function(event)
     {
 
+        // creating a temperary array to hold all memes that the search aplies to 
         tempArray = []
         
+        // creating a regex expresion using user imput, making it case sensitive  
         pattern = new RegExp(document.getElementById('search').value, 'i')
 
+        // going through all the memes
         memes.forEach(meme => {
 
+            // checking both the quote and alt text for the searched word
             if(!(meme.alt.match(pattern) == null)||!(meme.quote.match(pattern) == null))
             {
 
+                // adding all that appliy to the tempArray
                 tempArray.push(meme)
 
             }
 
         });
 
+        // clear the gallery
         $('#gallery').html('')
 
+        // each meme gets displayed from the tempArray
         for (let i = 0;i < tempArray.length; i++)
         {
     
@@ -394,6 +461,7 @@ $(document).ready(function(){
                 <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300 opacity-85'>
                     <img src="${tempArray[i].url}" alt="${tempArray[i].alt}" class='w-[70vw] p-2' opacity-75>
                     <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl opacity-85'>${tempArray[i].quote}</h2>
+                    <button onclick="onclickDelete(this)"class='w-[70vw] h-[10vh] delete rounded-4xl'>delete</button>
                 </div>
 
                 `)
@@ -402,16 +470,21 @@ $(document).ready(function(){
 
     })
 
+    // randomCombo
     $('#randomCombo').on('click', function(event)
     {
 
+        // clear
         $('#gallery').html('')
 
+        // adds the same amount of memes as there are
         for (let i = 0;i < memes.length; i++)
         {
 
+            // gets a random number 0-100
             let meme = Math.floor(Math.random() * 100);
 
+            // cut it till its valid
             while(meme > memes.length -1)
             {
 
@@ -419,8 +492,10 @@ $(document).ready(function(){
 
             }
 
+            // gets a random number 0-100
             let quote = Math.floor(Math.random() * 100);
 
+            // cut it till its valid
             while(quote > memes.length -1)
             {
 
@@ -434,6 +509,7 @@ $(document).ready(function(){
                 <div class='flex flex-col m-5 justify-center items-center border bg-yellow-300 opacity-85'>
                     <img src="${memes[meme].url}" alt="${memes[meme].alt}" class='w-[70vw] p-2' opacity-75>
                     <h2 class=' p-2 w-[70vw] text-center self-center text-purple-500 font-bold text-2xl opacity-85'>${memes[quote].quote}</h2>
+                    <button onclick="onclickDelete(this)"class='w-[70vw] h-[10vh] delete rounded-4xl'>delete</button>    
                 </div>
 
                 `)
